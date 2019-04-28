@@ -1,0 +1,872 @@
+@import "colors"
+
+html
+  font-size: 18px
+  font-family: 'Gilroy'
+
+header
+  padding: 0 100px
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05)
+  nav.navbar
+    box-sizing: border-box
+    padding: 0
+    div.navbar-collapse
+      ul
+        width: 100%
+        li
+          margin-right: 48px
+          &::after
+            content: ''
+            display: block
+            height: 1px
+            background-color: $main_violet
+            width: 100%
+            transition: all .3s ease-in-out
+            transform: translateY(30px) scale(0)
+            bottom: 0
+          &:hover::after
+            transform: translateY(30px) scale(1)
+          a
+            font-family: Gilroy
+            font-size: 1rem
+            color: $main_light_grey
+            line-height: 20px
+
+          a.nav-link
+
+        li.active
+          &::after
+            transform: translateY(30px) scale(1)
+
+        li.dropdown
+          a
+            &::after
+              display: none
+              content: none
+
+      .nav-actions
+        min-width: 255px
+
+        .ask-btn
+          color: $main_violet
+          border: 2px solid $main_violet
+          background-color: white
+          transition: all .4s ease-in-out
+
+          &:hover
+            background-color: $main_violet
+            color: white
+        .user_nav
+          text-decoration: none
+          margin-left: 20px
+          opacity: .25
+          transition: all .3s ease-in-out
+          &:hover
+            opacity: 1
+
+.section_wrap
+  padding: 5rem 0
+  &_header
+    margin-bottom: 4rem
+    h2
+      font-size: 3.25rem
+      color: $main_violet
+
+.nav_tabs_section
+  .nav_tabs_wrap
+    display: flex
+    justify-content: space-between
+    margin-bottom: 3.5rem
+    ul.nav-tabs
+      border: none
+      li
+        margin-right: 3.5rem
+        a
+          font-size: 1.35rem
+          color: $main_light_grey
+          font-family: 'Gilroy'
+          line-height: 26px
+          font-weight: 500
+          text-decoration: none
+          transition: all .3s ease-in-out
+          &:hover
+            color: $main_violet
+          &::after
+            display: block
+            content: ''
+            height: 2px
+            background-color: $main_light_grey
+            width: 100%
+            transform: translateY(12px) scale(0)
+            transition: all .3s ease-in-out
+          &.active
+            color: $main_violet
+            &::after
+              transform: translateY(12px) scale(1)
+    .additional_link
+      a
+        font-size: 1rem
+        text-decoration: none
+        color: $main_violet
+
+section#banner
+  background-color: $background_grey
+  padding: 2.75rem 0
+
+  .banner-content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+
+    &_header
+      font-family: 'Gilroy'
+      font-size: 4rem
+      line-height: 78px
+      color: $main_violet
+      font-weight: 700
+      margin-bottom: 1.75rem
+
+    &_text
+      font-family: 'Roboto Slab', serif
+      font-size: 1rem
+      color: $text-grey
+      line-height: 21px
+
+    &_btn
+      margin-top: 4rem
+
+      a
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        span
+          margin-left: 2.25rem
+
+  .slide_down
+    border: 1px solid #c4c4c4
+    border-radius: 2rem
+    width: 2rem
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 66px
+    transition: all .3s ease-in-out
+
+    &:hover
+      border-color: #4c4c4c
+
+      span
+        background-color: #4c4c4c
+
+section#trainings
+  .trainings_slider
+    position: relative
+    &-item
+      height: 430px
+      background: url("../images/microphone.png")
+      background-size: cover
+      position: relative
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      margin: 0 .75rem
+      border-radius: .5rem
+
+      .main_body
+        border-radius: .5rem .5rem 0 0
+        z-index: 10
+        background: rgba(46, 46, 170, 0.56)
+        flex: 1 1 auto
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+        &_header
+          width: 60%
+          border-radius: 0.5rem 0 3rem 0
+          margin: 0
+
+          text-align: center
+          font-size: 1.35rem
+          font-family: 'Gilroy'
+          color: #FFFFFF
+          font-weight: 700
+
+          &.sale_top
+            background: #F79393
+
+          &.sale_new
+            background: #8AD069
+
+          &.sale_stock
+            background: #F1D984
+
+        &_content
+          padding: 0 1.3rem 1.3rem 1.3rem
+          h4
+            font-size: 2rem
+            font-family: 'Gilroy'
+            color: #FFFFFF
+            font-weight: 700
+          p
+            margin: 0
+            font-size: 1rem
+            color: rgba(255, 255, 255, .5)
+            font-family: 'Roboto Slab', serif
+      .info_body
+        background: #ECECF7
+        display: flex
+        justify-content: space-around
+        padding: .75rem 0
+        p
+          margin: 0
+          color: $main_violet
+          font-family: 'Gilroy'
+          i
+            transform: scale(1.5)
+            margin-right: .75rem
+section#own_blog,section#contact_form
+  background: $background_grey
+section#materials
+  .materials_slider-item
+    display: flex
+    flex-direction: column
+    margin: 0 .75rem
+    &_link
+      margin: .75rem 0
+      display: block
+      border-radius: .5rem
+      text-decoration: none
+      .link_image
+        border-radius: .5rem .5rem 0 0
+        height: 168px
+        padding: 1rem
+        display: flex
+        align-items: flex-end
+        position: relative
+        h4
+          font-size: 2rem
+          color: #FFFFFF
+          font-family: 'Gilroy'
+          font-weight: 700
+          transition: all .3s ease-in-out
+          z-index: 100
+          opacity: 0
+        &::after
+          content: ''
+          display: block
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          background-color: rgb(25, 25, 96)
+          opacity: 0
+          transition: all .3s ease-in-out
+          border-radius: .5rem .5rem 0 0
+      .link_data
+        background: #ECECF7
+        display: flex
+        justify-content: space-around
+        padding: .75rem 0
+        border-radius: 0 0 .5rem .5rem
+        p
+          margin: 0
+          color: $main_violet
+          font-family: 'Gilroy'
+          color: #7E7E8D
+          i
+            transform: scale(1.5)
+            margin-right: .75rem
+      &:hover
+        .link_image
+          h4
+            opacity: 1
+          &::after
+            opacity: .5
+
+section#contact_form
+  .form_wrap
+    background: #D3D7E9
+    padding: 2.25rem 0
+
+section#rocket_registry
+  height: 370px
+  margin-top: 4rem
+  .rocker_wrap
+    position: relative
+    img
+      position: absolute
+      top: -30%
+  .invite_wrap
+    display: flex
+    flex-direction: column
+    justify-content: center
+    h4
+      font-size: 2rem
+      font-weight: 700
+      font-family: 'Gilroy'
+      color: $main_violet
+      margin-bottom: 21px
+
+footer
+  background-color: $main_violet
+  .section_wrap
+    &_header
+      h2
+        color: #FFFFFF
+    &_content
+      .phone_numbers
+        display: flex
+        flex-direction: column
+        margin-bottom: 140px
+        a.number
+          margin: 0
+          font-family: 'Gilroy'
+          font-size: 2.65rem
+          color: #FFFFFF
+          text-decoration: none
+      .network_contacts
+        .email
+          font-size: 2rem
+          font-family: 'Gilroy'
+          a
+            text-decoration: none
+            color: #FFFFFF
+        .socials
+          a
+            font-size: 3.25em
+            margin-right: .75rem
+            text-decoration: none
+            color: #080824
+            transition: all .3s ease-in-out
+            &:hover
+              color: #FFFFFF
+
+
+.profile_min
+  &_photo
+    border-radius: 50%
+    width: 275px
+    height: 275px
+
+  &_data
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    h4
+      margin-bottom: 1.75rem
+      color: $main_violet
+      font-family: 'Gilroy'
+      font-size: 2rem
+      line-height: 39px
+    p
+      font-family: 'Roboto Slab', serif
+      color: $text-grey
+      margin-bottom: 3rem
+    a.struchaeva_btn
+      max-width: 200px
+
+.slick-arrow
+  height: 84px
+  background: rgba(46, 46, 170, 0.09)
+  position: absolute
+  border: none
+  top: calc(50% - 42px)
+  width: 35px
+  display: flex
+  justify-content: center
+  align-items: center
+  color: $main_violet
+  transition: all .3s ease-in-out
+  &:hover
+    background: $main_violet
+    color: #FFFFFF
+  &:active,&:focus
+    outline: none
+    box-shadow: none
+.slick-arrow-right
+  right: -70px
+  border-radius: 0 .5rem .5rem 0
+.slick-arrow-left
+  left: -70px
+  border-radius: 0.5rem 0 0 .5rem
+
+.struchaeva_btn
+  background-color: $main_violet
+  color: #FFFFFF
+  border: 1px solid $main_violet
+  transition: all .3s ease-in-out
+
+  &:hover
+    color: #FFFFFF
+    background-color: #242488
+    box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, .6)
+
+span.arrow-right
+  height: 1px
+  width: 24px
+  background-color: #FFFFFF
+  display: block
+  position: relative
+  transition: all .3s ease-in-out
+
+  &::before, &::after
+    display: block
+    content: ''
+    background-color: inherit
+    width: 6px
+    height: 1px
+    position: absolute
+    right: 0
+    transform-origin: right
+
+  &::before
+    transform: rotate(-30deg)
+
+  &::after
+    transform: rotate(30deg)
+
+span.arrow-down
+  height: 1px
+  width: 38px
+  background-color: #c4c4c4
+  display: block
+  position: relative
+  transform: rotate(90deg)
+  transition: all .3s ease-in-out
+
+  &::before, &::after
+    display: block
+    content: ''
+    background-color: inherit
+    width: 8px
+    height: 1px
+    position: absolute
+    right: 0
+    transform-origin: right
+
+  &::before
+    transform: rotate(-40deg)
+
+  &::after
+    transform: rotate(40deg)
+
+form.contact_form
+  height: 380px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  width: 330px
+  .form-group
+    width: 100%
+  .contact_form_header
+    h4
+      font-family: 'Gilroy'
+      font-size: 1.5rem
+      color: $main_violet
+      font-weight: 700
+  .contact_form_input_wrap
+    border-bottom: 3px solid #B9BCCC
+    label
+      margin: 0
+      color: $main_violet
+    input
+      color: #3F3D56
+      font-family: 'Gilroy'
+
+    input:focus,input:after
+      outline: none
+      box-shadow: none
+
+    input::-webkit-input-placeholder
+      color: #3F3D56
+    input::-moz-placeholder
+      color: #3F3D56
+    input:-moz-placeholder
+      color: #3F3D56
+    input:-ms-input-placeholder
+      color: #3F3D56
+    .input-group-prepend,input,.input-group-text
+      background-color: transparent
+      border: none
+
+.simple_slider
+  margin-top: 4rem
+  .simple_slider_item
+    display: flex
+    justify-content: center
+.simple_slider_item:focus
+  outline: none
+  box-shadow: none
+
+.struchaeva_modal
+  width: 350px
+  .modal-header
+    border-bottom: none
+    h5
+      text-align: center
+      color: $main_violet
+      font-family: 'Gilroy'
+      width: 100%
+      font-weight: 700
+  .modal-content
+    position: relative
+    button.close
+      position: absolute
+      top: -6px
+      right: -26px
+      color: #C4C4C4
+      transition: all .3s ease-in-out
+      &:hover
+        transform: scale(1.1)
+  .modal-footer
+    border: none
+    padding-top: 0
+    .bottom_text
+      margin-top: 1.5rem
+      margin-bottom: 0
+      text-align: center
+      font-family: 'Gilroy'
+      font-style: italic
+      color: #8E90A9
+      a
+        color: $main_violet
+
+  .modal_form
+    textarea
+      height: 210px
+    textarea,input
+      border: none
+      background-color: $input-bg
+      padding: .5rem
+      border-radius: .25rem
+      &:focus,&:active
+        outline: none
+        box-shadow: none
+    .input-group-text
+      border: none
+      border-radius: 0 .25rem .25rem 0
+      background-color: $input-bg
+      color: #F79393
+    .toggle_input_type
+      width: 28px
+      border-radius: .25rem
+      border: none
+      background-color: $input-bg
+      color: #7E7E8D
+      font-size: .75rem
+      transition: all .3s ease-in-out
+      &:hover
+        color: $main_violet
+      &:active,&:focus
+        outline: none
+        box-shadow: none
+  .social_in_wrap
+    .google_btn
+      border: 1px solid #DBDCE5
+      border-radius: .25rem
+      color: #8E90A9
+      font-family: 'Gilroy'
+      transition: all .3s ease-in-out
+      font-weight: 700
+      &:hover
+        border-color: $main_violet
+        color: $main_violet
+    .or_border
+      font-family: 'Gilroy'
+      color: #8E90A9
+      text-align: center
+      position: relative
+      height: 27px
+      .or_text
+        position: absolute
+        width: 50px
+        left: calc(50% - 25px)
+        background-color: white
+        text-align: center
+        z-index: 100
+
+      &::after
+        display: block
+        content: ''
+        height: 2px
+        top: 50%
+        position: absolute
+        background-color: #F9F9F9
+        width: 100%
+        z-index: 1
+
+
+
+// Single training
+.sub_section_wrap
+  padding: 5rem 0
+  &_header
+    margin-bottom: 3rem
+    h2
+      font-size: 2rem
+      color: $main_violet
+section#top_nav_menu
+  background-color: $background_grey
+  padding: 2.25rem 0
+  border-bottom: 1px solid black
+  .top_nav_menu_wrap
+    display: flex
+    align-items: center
+    &_home
+      a
+        text-decoration: none
+        color: $main_light_grey
+        transition: all .3s ease-in-out
+        &:hover
+          color: $main_violet
+    &_item
+      margin-left: 4.5rem
+      position: relative
+      a
+        color: $main_light_grey
+        transition: all .3s ease-in-out
+        text-decoration: none
+        &:hover
+          color: $main_violet
+      &::after
+        display: block
+        content: ""
+        height: 1px
+        width: 44px
+        background-color: $main_light_grey
+        top: 50%
+        left: -60px
+        position: absolute
+    .active_item
+      a
+        color: $main_violet
+section#sub_banner
+  .banner_wrap
+    background-color: $main_violet
+    &_content
+      padding: 7.5rem 5rem 2rem 5rem
+      display: flex
+      justify-content: center
+      &_header
+        font-family: Gilroy
+        font-size: 2.75rem
+        line-height: 56px
+        color: white
+        font-weight: 700
+
+      &_text
+        color: rgba(255,255,255,.5)
+        font-family: 'Roboto Slab', serif
+        line-height: 21px
+        max-width: 420px
+        margin-top: 1.5rem
+      &_info
+        display: flex
+        margin-top: 3.25rem
+        p
+          margin-right: 2.5rem
+          font-size: 1.5rem
+          color: white
+          i
+            transform: scale(1.2)
+            margin-right: .75rem
+    &_photo
+      position: relative
+      background-position-x: right !important
+      &::after
+        position: absolute
+        display: block
+        content: ''
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgba(46, 46, 170, 0.4)
+
+section#description
+  background-color: $background_grey
+  .description_text
+    font-family: 'Roboto Slab', serif
+    font-size: 1.33rem
+    line-height: 28px
+    color: #6D6D6D
+
+section#contact_form.sub_contact_form
+  background-color: white
+  .form_wrap
+    background-color: inherit
+
+section#format_section
+  background-color: $background_grey
+  .format_item
+    &_body
+      width: 100%
+      min-height: 300px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      padding: 2.25rem
+      border-radius: 5px
+      margin-bottom: 1.1rem
+      .format_item_name
+        h5
+          font-family: 'Gilroy'
+          font-weight: 700
+          font-size: 1.5rem
+          line-height: 29px
+          &::after
+            display: block
+            content: ''
+            height: 6px
+            width: 68px
+            border-radius: 3px
+            background-color: #EBEBEB
+            margin: 1rem auto
+      .format_item_price
+        p
+          font-family: 'Gilroy'
+          text-align: center
+          margin-bottom: 0
+        .price
+          font-size: 1.5rem
+          position: relative
+          &::after
+            display: block
+            content: ""
+            height: 2px
+            width: 130%
+            background-color: #080824
+            top: calc(50% - 1px)
+            left: -15%
+            position: absolute
+        .discount
+          font-size: 2rem
+          font-weight: 700
+    &_btn
+      font-size: 1.25rem
+      font-family: 'Gilroy'
+      font-weight: 700
+      height: 64px
+      display: flex
+      align-items: center
+      justify-content: center
+      transition: all .3s ease-in-out
+  .format_item:first-child
+    .format_item_body
+      height: 425px
+      background-color: #C4C4C4
+      .format_item_name
+        color: $main_violet
+      .format_item_price
+        .price
+          color: #ffffff
+          &::after
+            background-color: $main_violet
+        .discount
+          color: $main_violet
+    .format_item_btn
+      background-color: #C4C4C4
+      color: $main_violet
+      &:hover
+        background-color: $main_violet
+        color: white
+  .format_item:nth-child(2)
+    .format_item_body
+      height: 545px
+      background-color: $main_violet
+      .format_item_name
+        color: #C4C4C4
+      .format_item_price
+        .price
+          color: #C4C4C4
+          &::after
+            background-color: #080824
+        .discount
+          color: #C4C4C4
+    .format_item_btn
+      background-color: $main_violet
+      color: #C4C4C4
+      &:hover
+        background-color: #080824
+        color: white
+  .format_item:nth-child(3)
+    .format_item_body
+      height: 665px
+      background-color: #080824
+      .format_item_name
+        color: #ffffff
+      .format_item_price
+        .price
+          color: #C4C4C4
+          &::after
+            background-color: #9D9D9D
+        .discount
+          color: #ffffff
+    .format_item_btn
+      background-color: #080824
+      color: white
+      &:hover
+        background-color: $main_violet
+        color: white
+
+section#steps_section
+  background-color: #080824
+  .step_item
+    margin-top: 1.25rem
+    padding: 1rem
+    &_img
+      margin-bottom: .75rem
+    &_text
+      font-size: 1.25rem
+      font-family: 'Gilroy'
+      font-weight: 700
+      color: #ffffff
+
+section#faq_section
+  .sub_section_wrap
+    &_header
+      .sub_header
+        font-family: 'Gilroy'
+        font-size: 1.25rem
+        color: #C4C4C4
+        margin-bottom: 0
+  .faq_accordion_item
+    margin-bottom: .75rem
+    border: none
+    .card-header
+      border-radius: 5px
+      background-color: $main_violet
+      h2
+        i,button
+          color: white
+        button
+          text-decoration: none !important
+          font-size: 1.25rem
+          font-family: 'Roboto Slab', serif
+          font-weight: 700
+          i.accordion_state::before
+            content: '\f068'
+            font-size: 1.25rem
+        button.collapsed
+          i.accordion_state::before
+            content: '\f067'
+            font-size: 1.25rem
+    .card-body
+      padding: 2.5rem 3rem
+      background: #F1F1F1
+      font-family: 'Roboto Slab', serif
+      font-weight: 700
+      font-size: 1.25rem
+      color: #6D6D6D
+
+
+
+
+

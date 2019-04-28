@@ -1,0 +1,284 @@
+@import "colors"
+
+@media screen and (max-width: 1024px)
+  header
+    padding: 0 24px
+    nav.navbar
+      a.navbar-brand
+        img
+          width: 140px
+      div.navbar-collapse
+        ul
+          li
+            margin-right: 20px
+  .section_wrap
+    padding: 3.5rem 0
+    &_header
+      h2
+        font-size: 3rem
+  section#banner
+    .banner_image
+      img
+        width: 420px
+    .banner-content
+      &_header
+        font-size: 3.5rem
+  section#sub_banner
+    .banner_wrap_photo
+      background-position-x: left !important
+@media screen and (max-width: 768px)
+  header
+    nav.navbar
+      a.navbar-brand
+        img
+          width: 180px
+      button.navbar-toggler
+        border-color: $main_violet !important
+        color: $main_violet !important
+      div.navbar-collapse
+        ul
+          width: 100%
+          li
+            margin-right: 48px
+            &::after
+              display: none
+  section#banner
+    .banner-image-wrap
+      display: none
+  .nav_tabs_section
+    .nav_tabs_wrap
+      display: flex
+      justify-content: space-between
+      margin-bottom: 1.75rem
+      ul.nav-tabs
+        border: none
+        li
+          margin-right: 1.5rem
+
+  .profile_min
+    &_photo
+      border-radius: 50%
+      width: 225px
+      height: 225px
+  section#contact_form
+    .form_wrap
+      padding: 2rem .75rem
+      .form_image
+        img
+          width: 290px
+  section#rocket_registry
+    .rocker_wrap
+      img
+        left: -110px
+  footer
+    .section_wrap
+      &_content
+        .phone_numbers
+            a.number
+              font-size: 2rem
+@media screen and (max-width: 576px)
+  .section_wrap
+    padding: 3.25rem 0
+    &_header
+      h2
+        font-size: 2.5rem
+  .nav_tabs_section
+    .nav_tabs_wrap
+      flex-wrap: wrap
+      ul.nav-tabs
+        margin-bottom: 1.5rem
+        width: 100%
+        border: none
+        li
+          margin-bottom: 1rem
+          margin-right: 1.5rem
+  section#trainings
+    .trainings_slider-item
+      .info_body
+        p
+          font-size: .85rem
+          i
+            transform: scale(1.25)
+            margin-right: .5rem
+      .main_body
+          &_header
+            width: 70%
+            font-size: 1.25rem
+          &_content
+            padding: 0 1.15rem 1.15rem 1.15rem
+            h4
+              font-size: 1.5rem
+            p
+              font-size: .75rem
+  .profile_min
+    &_data
+      h4
+        margin-bottom: 1.5rem
+        font-size: 1.75rem
+      p
+        margin-bottom: 2.5rem
+  section#materials
+    .materials_slider-item_link
+      .link_data
+        p
+          font-size: .85rem
+          i
+            transform: scale(1.25)
+            margin-right: .5rem
+  section#contact_form
+    .form_wrap
+      .row
+        position: relative
+        .form_image
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          z-index: 2
+
+  form.contact_form
+    height: 420px
+    width: 380px
+    padding: 1.5rem
+    box-sizing: border-box
+    position: relative
+    z-index: 10
+    &::after
+      position: absolute
+      display: block
+      z-index: -1
+      content: ''
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      background-color: rgba(255,255,255,.65)
+  section#rocket_registry
+    .invite_wrap
+      position: relative
+      h4
+        font-size: 1.75rem
+      h4,a
+        z-index: 2
+      &::after
+        position: absolute
+        display: block
+        z-index: 1
+        content: ''
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background-color: rgba(255,255,255,.65)
+    .rocker_wrap
+      img
+        z-index: 0
+
+  section#sub_banner
+    .banner_wrap_content
+      padding: 2.5rem
+      &_info
+
+
+@media screen and (max-width: 475px)
+  section#banner
+    .banner-content
+      &_header
+        font-size: 3rem
+        line-height: 64px
+      &_btn
+        margin-top: 2.5rem
+  .section_wrap
+    padding: 2.75rem 15px
+    &_header
+      margin-bottom: 2.5rem
+  .nav_tabs_section
+    .nav_tabs_wrap
+      flex-wrap: wrap
+      ul.nav-tabs
+        li
+          margin-right: 1rem
+          a
+            font-size: 1.15rem
+  .sub_section_wrap
+    padding: 4rem 1.5rem
+  section#faq_section
+    .faq_accordion_item
+      .card-body
+        font-size: 1rem
+  section#rocket_registry
+    .rocker_wrap
+      img
+        width: 500px
+  section#format_section
+    background-color: $background_grey
+    .sub_section_wrap_content
+      .row
+        padding: 27px !important
+    .format_item:first-child
+      .format_item_body
+        height: 375px
+    .format_item:nth-child(2)
+      .format_item_body
+        height: 445px
+    .format_item:nth-child(3)
+      .format_item_body
+        height: 525px
+  section#description
+    .description_text
+      font-size: 1rem
+
+@media screen and (max-width: 414px)
+  form.contact_form
+    height: 440px
+    .contact_form_header
+      h4
+        font-size: 1.25rem
+  section#faq_section
+    .faq_accordion_item
+      .card-header
+        padding: .5rem .75rem
+        button
+          padding: 0
+@media screen and (max-width: 375px)
+  main
+    overflow-x: hidden
+  section#top_nav_menu
+    .top_nav_menu_wrap
+      align-items: center
+      flex-wrap: wrap
+    .top_nav_menu_wrap_home
+
+    .top_nav_menu_wrap_item
+
+      &::after
+        width: 26px
+    a
+      font-size: .75rem
+@media screen and (max-width: 320px)
+  section#banner
+    padding: 2rem 0
+    .banner-content
+      &_header
+        font-size: 2.25rem
+        line-height: 54px
+  .section_wrap
+    padding: 2rem 15px
+    &_header
+      margin-bottom: 2rem
+      h2
+        font-size: 2rem
+  section#rocket_registry
+    .invite_wrap
+      h4
+        font-size: 1.5rem
+  footer
+    .section_wrap_content
+      .network_contacts
+        .socials
+          a
+            font-size: 2.5rem
+
+
+

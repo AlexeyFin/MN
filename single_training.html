@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--FontAwesome-->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <!--Slick Slider-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <link rel="stylesheet" href="css/gilroy.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Алла Стручаева</title>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex justify-content-end">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Тренинги
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Drop item 1</a>
+                        <a class="dropdown-item" href="#">Drop item 2</a>
+                        <a class="dropdown-item" href="#">Drop item 3</a>
+                        <a class="dropdown-item" href="#">Drop item 4</a>
+
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Личный блог</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Биография</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+
+            </ul>
+            <div class="nav-actions ">
+                <button type="button" class="btn ask-btn" data-toggle="modal" data-target="#askModal">
+                    Задать вопрос
+                </button>
+                <a href="#signInModal" data-toggle="modal" class="user_nav">
+                    <img src="images/icons/Group5.png" alt="">
+                </a>
+                <!-- /.user_nav -->
+                <a href="#signOnModal" data-toggle="modal" class="user_nav">
+                    <img src="images/icons/Group.svg" alt="">
+                </a>
+                <!-- /.user_nav -->
+            </div>
+            <!-- /.nav-actions -->
+
+        </div>
+    </nav>
+</header>
+<main>
+    <section id="top_nav_menu">
+        <div class="container">
+            <div class="top_nav_menu_wrap">
+                <div class="top_nav_menu_wrap_home">
+                    <a href="index.html">
+                        <i class="fas fa-chevron-left mr-2"></i>
+                        <span class="text">
+                            Главная
+                        </span>
+                        <!-- /.text -->
+                    </a>
+
+                </div>
+                <!-- /.top_nav_menu_wrap_home -->
+                <div class="top_nav_menu_wrap_item active_item">
+                    <a href="#">
+                        "Публичный микрофон"
+                    </a>
+                </div>
+                <!-- /.top_nav_menu_wrap_item active_item -->
+            </div>
+            <!-- /.top_na_menu_wrap -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <section id="sub_banner">
+        <div class="container-fluid banner_wrap">
+            <div class="row">
+                <div class="col-xl-7 col-lg-8 banner_wrap_content">
+
+                    <div class="wrapper">
+                        <h1 class="banner_wrap_content_header">
+                            Публичный микрофон
+                        </h1>
+                        <!-- /.banner_wrap_content_header -->
+                        <p class="banner_wrap_content_text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque explicabo hic, maiores minus
+                            quod tempore.
+                        </p>
+                        <!-- /.banner_wrap_content_text -->
+                        <div class="banner_wrap_content_info">
+                            <p class="basket">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="count">670</span>
+                                <!-- /.count -->
+                            </p>
+                            <!-- /.basket -->
+                            <p class="calendar">
+                                <i class="far fa-calendar-alt"></i>
+                                <span class="count">
+                                           5 дней
+                                        </span>
+                                <!-- /.count -->
+                            </p>
+                            <!-- /.calendar -->
+                            <p class="likes">
+                                <i class="far fa-thumbs-up"></i>
+                                <span class="count">
+                                            586
+                                        </span>
+                                <!-- /.count -->
+                            </p>
+                            <!-- /.likes -->
+                        </div>
+                    </div>
+                    <!-- /.wrapper -->
+
+                </div>
+                <!-- /.col-7 -->
+                <div class="col-xl-5 col-lg-4 banner_wrap_photo"
+                     style="background: url('images/microphone.png') #0c0807;
+                     background-size: contain; background-repeat: no-repeat;   "></div>
+                <!-- /.col-5 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+
+    </section>
+    <section id="description">
+        <div class="container sub_section_wrap">
+            <div class="sub_section_wrap_header">
+                <h2>Описание тренинга</h2>
+            </div>
+            <!-- /.section_header -->
+            <div class="sub_section_wrap_content">
+                <p class="description_text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium at atque autem dicta
+                    distinctio dolor eos error et eum, excepturi exercitationem fuga ipsum libero magni maxime modi
+                    natus nulla, officia quia rem, soluta temporibus tenetur totam voluptatem? Dolor doloremque fugit
+                    quae tenetur. Accusantium aliquid animi atque, consequuntur debitis doloribus eaque eligendi eveniet
+                    explicabo id illum, iste laboriosam laborum magni nisi nostrum numquam perspiciatis placeat, quam
+                    quo repellat repellendus saepe sit vel vitae! Architecto, et harum rem repellendus temporibus
+                    veritatis.
+                </p>
+            </div>
+            <!-- /.sub_section_wrap_content -->
+        </div>
+        <!-- /.container section_wrap -->
+    </section>
+    <section class="sub_contact_form" id="contact_form">
+        <div class="container section_wrap">
+            <div class="section_wrap_content">
+                <div class="form_wrap">
+                    <div class="row">
+                        <div class="col-md-6 d-flex justify-content-center form_image">
+                            <img src="images/sub_page_form.png" alt="">
+                        </div>
+                        <!-- /.col-6 -->
+                        <div class="col-md-6 d-flex justify-content-center form_content">
+                            <form name="contact_form" class="contact_form">
+                                <div class="form-group contact_form_header">
+                                    <h4>
+                                        Подпишись на рассылку чтобы не упустить ничего важного
+                                    </h4>
+                                </div>
+                                <!-- /.form_group -->
+                                <div class="input-group contact_form_input_wrap mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><label for="contact_name"><i
+                                                class="fas fa-user"></i></label></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="contact_name" placeholder="Имя"
+                                           required>
+                                </div>
+                                <div class="input-group contact_form_input_wrap mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><label for="contact_phoneNumber"><i
+                                                class="fas fa-phone" style="transform: rotate(90deg)"></i></label></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="contact_phoneNumber"
+                                           placeholder="Телефон" required>
+                                </div>
+                                <div class="input-group contact_form_input_wrap mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><label for="contact_email"><i
+                                                class="fas fa-envelope"></i></label></div>
+                                    </div>
+                                    <input type="text" class="form-control" id="contact_email" placeholder="E-mail"
+                                           required>
+                                </div>
+
+
+                                <div class="form-group mt-5">
+                                    <button type="submit"
+                                            class="btn btn-block d-flex justify-content-between align-items-center struchaeva_btn">
+                                        Отправить <span class="arrow-right"></span></button>
+                                </div>
+                                <!-- /.form-group -->
+                            </form>
+                        </div>
+                        <!-- /.col-6 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.form_wrap -->
+            </div>
+            <!-- /.section_wrap_content -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <section id="format_section">
+        <div class="container sub_section_wrap">
+            <div class="sub_section_wrap_header">
+                <h2 class="text-center">Выбери удобный для себя формат</h2>
+            </div>
+            <!-- /.section_wrap_header -->
+            <div class="sub_section_wrap_content">
+                <div class="row pt-4 px-5 px-md-0">
+                    <div class="col-md-4 pb-4 pb-md-0 col-12 format_item standard">
+                        <div class="format_item_body mb-3">
+                            <div class="format_item_name">
+                                <h5>Standard</h5>
+                            </div>
+                            <!-- /.format_item_name -->
+                            <div class="format_item_price mt-auto">
+                                <p class="price">399$</p>
+                                <!-- /.price -->
+                                <p class="discount">299$</p>
+                                <!-- /.discount -->
+                            </div>
+                            <!-- /.format_item_price mt-auto -->
+                        </div>
+                        <!-- /.format_item_body mb-2 -->
+                        <a href="#" class="format_item_btn btn btn-block">Принять участие</a>
+                        <!-- /.format_item_btn btn btn-block -->
+                    </div>
+                    <!-- /.col-md-4 col-12 -->
+                    <div class="col-md-4 pb-4 pb-md-0 col-12 format_item comfort">
+                        <div class="format_item_body mb-3">
+                            <div class="format_item_name">
+                                <h5>Comfort</h5>
+                            </div>
+                            <!-- /.format_item_name -->
+                            <div class="format_item_price mt-auto">
+                                <p class="price">399$</p>
+                                <!-- /.price -->
+                                <p class="discount">299$</p>
+                                <!-- /.discount -->
+                            </div>
+                            <!-- /.format_item_price mt-auto -->
+                        </div>
+                        <!-- /.format_item_body mb-2 -->
+                        <a href="#" class="format_item_btn btn btn-block">Принять участие</a>
+                        <!-- /.format_item_btn btn btn-block -->
+                    </div>
+                    <!-- /.col-md-4 col-12 -->
+                    <div class="col-md-4 pb-4 pb-md-0 col-12 format_item premium">
+                        <div class="format_item_body mb-3">
+                            <div class="format_item_name">
+                                <h5>Standart</h5>
+                            </div>
+                            <!-- /.format_item_name -->
+                            <div class="format_item_price mt-auto">
+                                <p class="price">399$</p>
+                                <!-- /.price -->
+                                <p class="discount">299$</p>
+                                <!-- /.discount -->
+                            </div>
+                            <!-- /.format_item_price mt-auto -->
+                        </div>
+                        <!-- /.format_item_body mb-2 -->
+                        <a href="#" class="format_item_btn btn btn-block">Принять участие</a>
+                        <!-- /.format_item_btn btn btn-block -->
+                    </div>
+                    <!-- /.col-md-4 col-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.sub_section_wrap_content -->
+        </div>
+        <!-- /.container section_wrap -->
+    </section>
+    <section id="steps_section">
+        <div class="container sub_section_wrap">
+            <div class="sub_section_wrap_content">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12 px-5 px-sm-0 step_item">
+                        <img src="images/numbers/1..png" alt=""
+                             class="step_item_img">
+                        <!-- /.step_item_img -->
+                        <p class="step_item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt,
+                            quia.</p>
+                        <!-- /.step_item_text -->
+                    </div>
+                    <!-- /.col-md-4 col-sm-6 col-12 step_item -->
+                    <div class="col-md-4 col-sm-6 col-12 px-5 px-sm-0 step_item">
+                        <img src="images/numbers/2..png" alt=""
+                             class="step_item_img">
+                        <!-- /.step_item_img -->
+                        <p class="step_item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
+                            doloribus quasi vero.</p>
+                        <!-- /.step_item_text -->
+                    </div>
+                    <!-- /.col-md-4 col-sm-6 col-12 step_item -->
+                    <div class="col-md-4 col-sm-6 col-12 px-5 px-sm-0 step_item">
+                        <img src="images/numbers/3..png" alt=""
+                             class="step_item_img">
+                        <!-- /.step_item_img -->
+                        <p class="step_item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+                            doloremque eos molestias rem sapiente veniam!</p>
+                        <!-- /.step_item_text -->
+                    </div>
+                    <!-- /.col-md-4 col-sm-6 col-12 step_item -->
+                    <div class="col-md-4 col-sm-6 col-12 px-5 px-sm-0 step_item">
+                        <img src="images/numbers/4..png" alt=""
+                             class="step_item_img">
+                        <!-- /.step_item_img -->
+                        <p class="step_item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur,
+                            sed, vel.</p>
+                        <!-- /.step_item_text -->
+                    </div>
+                    <!-- /.col-md-4 col-sm-6 col-12 step_item -->
+                    <div class="col-md-4 col-sm-6 col-12 px-5 px-sm-0 step_item">
+                        <img src="images/numbers/5..png" alt=""
+                             class="step_item_img">
+                        <!-- /.step_item_img -->
+                        <p class="step_item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <!-- /.step_item_text -->
+                    </div>
+                    <!-- /.col-md-4 col-sm-6 col-12 step_item -->
+                    <div class="col-md-4 col-sm-6 col-12 px-5 px-sm-0 step_item">
+                        <img src="images/numbers/6..png" alt=""
+                             class="step_item_img">
+                        <!-- /.step_item_img -->
+                        <p class="step_item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi
+                            architecto aspernatur atque iure maiores nam sunt veritatis.</p>
+                        <!-- /.step_item_text -->
+                    </div>
+                    <!-- /.col-md-4 col-sm-6 col-12 step_item -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.sub_section_wrap_content -->
+        </div>
+        <!-- /.sub_section_wrap -->
+    </section>
+    <section id="faq_section">
+        <div class="container sub_section_wrap">
+            <div class="sub_section_wrap_header">
+                <h2>FAQ</h2>
+                <p class="sub_header">
+                    Часто задаваемые вопросы
+                </p>
+                <!-- /.sub_header -->
+            </div>
+            <!-- /.sub_section_wrap_header -->
+            <div class="sub_section_wrap_content">
+                <div class="accordion" id="FAQ_accordion">
+                    <div class="card faq_accordion_item">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fas mr-4 accordion_state"></i>
+                                    <!-- /.fas --> Collapsible Group Item #1
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse mt-4" aria-labelledby="headingOne" data-parent="#FAQ_accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card faq_accordion_item">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fas mr-4 accordion_state"></i>
+                                    <!-- /.fas --> Collapsible Group Item #2
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse mt-4" aria-labelledby="headingTwo" data-parent="#FAQ_accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card faq_accordion_item">
+                        <i class="fas mr-4 accordion_state"></i>
+                        <!-- /.fas -->
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fas mr-4 accordion_state"></i>
+                                    <!-- /.fas --> Collapsible Group Item #3
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse mt-4" aria-labelledby="headingThree" data-parent="#FAQ_accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card faq_accordion_item">
+                        <i class="fas mr-4 accordion_state"></i>
+                        <!-- /.fas -->
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fas mr-4 accordion_state"></i>
+                                    <!-- /.fas -->
+                                    Collapsible Group Item #4
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse mt-4" aria-labelledby="headingFour" data-parent="#FAQ_accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.sub_section_wrap_content -->
+        </div>
+        <!-- /.container sub_section_wrap -->
+    </section>
+
+    <section id="rocket_registry">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md-6 col-12 rocker_wrap">
+                    <img src="images/rocket.png" alt="">
+                </div>
+                <!-- /.col-md-6 -->
+                <div class="col-md-6 col-12 invite_wrap">
+                    <h4>
+                        Регистрируйся, не упусти возможность стать лучше!
+                    </h4>
+                    <a href="#signOnModal" data-toggle="modal"
+                       class="btn struchaeva_btn d-flex justify-content-between align-items-center "
+                       style="width: 230px">
+                        Регистрация <span class="arrow-right"></span>
+                    </a>
+
+
+                </div>
+                <!-- /.col-md-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container section_wrap -->
+    </section>
+</main>
+<footer>
+    <div class="container section_wrap">
+        <div class="section_wrap_header">
+            <h2>Контакты</h2>
+        </div>
+        <!-- /.section_wrap_header -->
+        <div class="section_wrap_content">
+            <div class="row">
+                <div class="col-md-6 contacts_wrap">
+                    <div class="phone_numbers">
+                        <a href="tel:+380 99 123 4567" class="number">+380 99 123 4567</a>
+                        <!-- /.number -->
+                        <a href="tel:+380 97 765 4321" class="number">+380 97 765 4321</a>
+                        <!-- /.number -->
+                    </div>
+                    <!-- /.phone_numbers -->
+                    <div class="network_contacts">
+                        <div class="email">
+                            <a href="mailto:info@gmail.com">info@gmail.com</a>
+                        </div>
+                        <!-- /.email -->
+                        <div class="socials">
+                            <a href="#" class="facebook">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a href="#" class="youtube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                            <!-- /.linkedin -->
+                        </div>
+                        <!-- /.socials -->
+                    </div>
+                    <!-- /.network_contacts -->
+                </div>
+                <!-- /.col-md-6 -->
+                <div class="col-md-6 d-none map_wrap">
+
+                </div>
+                <!-- /.col-md-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.section_wrap_content -->
+    </div>
+    <!-- /.container section_wrap -->
+</footer>
+<div class="modals">
+    <div class="modal fade" id="askModal" tabindex="-1" role="dialog" aria-labelledby="askModalTitle"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered struchaeva_modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <form name="aks_form" class="modal_form">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="ask_name" placeholder="Имя" required>
+                        </div>
+                        <div class="form-group">
+
+                            <input type="email" class="form-control" id="aks_email" placeholder="Email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-control" id="aks_text" maxlength="200"
+                                      placeholder="Что вас интересует?" required></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit"
+                                class="btn btn-block d-flex justify-content-between align-items-center struchaeva_btn">
+                            Отправить <span class="arrow-right"></span>
+                            <!-- /.arrow-right --></button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalTitle"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered struchaeva_modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <form name="signIn_form" class="modal_form">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Вход</h5>
+                    </div>
+                    <!-- /.modal-header -->
+                    <div class="modal-body">
+                        <div class="social_in_wrap">
+                            <div class="row">
+                                <div class="col-6 mb-4 pr-1">
+                                    <a href="#" class="btn btn-block d-flex justify-content-between struchaeva_btn"
+                                       style="font-weight: 700">
+                                        <span class="border-right pr-2"> <i class="fab fa-facebook-f"></i></span>
+                                        Facebook
+                                    </a>
+                                    <!-- /.btn -->
+                                </div>
+                                <!-- /.col-6 -->
+                                <div class="col-6 mb-4 pl-1">
+                                    <a href="#" class="btn btn-block d-flex justify-content-between google_btn">
+                                        <span class="border-right pr-2"> <img src="images/icons/google_logo.svg"
+                                                                              style="width: 18px"></span>
+                                        Google
+                                    </a>
+                                </div>
+                                <!-- /.col-6 -->
+                                <div class="col-12 mb-4">
+                                    <div class="or_border">
+                                        <div class="or_text">или</div>
+                                        <!-- /.or_text -->
+                                    </div>
+                                    <!-- /.or_border -->
+                                </div>
+                                <!-- /.col-12 -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.social_in -->
+                        <div class="input-group mb-2">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                            <div class="input-group-prepend">
+                                <div class="input-group-text ">*</div>
+                            </div>
+                        </div>
+                        <div class="input-group mb-2">
+                            <input type="password" class="form-control" placeholder="Пароль" required>
+                            <div class="input-group-prepend">
+                                <div class="input-group-text ">*</div>
+                            </div>
+                            <button type="button" class="ml-2 toggle_input_type"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <div class="input-group mb-2 reCapcha_wrap"></div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="submit"
+                                        class="btn btn-block d-flex justify-content-between align-items-center struchaeva_btn">
+                                    Войти <span class="arrow-right"></span>
+                                    <!-- /.arrow-right -->
+                                </button>
+                            </div>
+                            <!-- /.col-12 -->
+                            <div class="col-12">
+                                <p class="bottom_text">
+                                    Нет аккаунта? <br>
+                                    <a href="#signOnModal" data-target="modal"
+                                       onclick="$('.close').click(); $('#signOnModal').modal('show')">Зарегистрироваться</a>
+                                </p>
+                            </div>
+                            <!-- /.col-12 -->
+                        </div>
+                        <!-- /.row -->
+
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="signOnModal" tabindex="-1" role="dialog" aria-labelledby="signOnModalTitle"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered struchaeva_modal" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <form name="signOn_form" class="modal_form">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Регистрация</h5>
+                    </div>
+                    <!-- /.modal-header -->
+                    <div class="modal-body">
+                        <div class="social_in_wrap">
+                            <div class="row">
+                                <div class="col-6 mb-4 pr-1">
+                                    <a href="#" class="btn btn-block d-flex justify-content-between struchaeva_btn"
+                                       style="font-weight: 700">
+                                        <span class="border-right pr-2"> <i class="fab fa-facebook-f"></i></span>
+                                        Facebook
+                                    </a>
+                                    <!-- /.btn -->
+                                </div>
+                                <!-- /.col-6 -->
+                                <div class="col-6 mb-4 pl-1">
+                                    <a href="#" class="btn btn-block d-flex justify-content-between google_btn">
+                                        <span class="border-right pr-2"> <img src="images/icons/google_logo.svg"
+                                                                              style="width: 18px"></span>
+                                        Google
+                                    </a>
+                                </div>
+                                <!-- /.col-6 -->
+                                <div class="col-12 mb-4">
+                                    <div class="or_border">
+                                        <div class="or_text">или</div>
+                                        <!-- /.or_text -->
+                                    </div>
+                                    <!-- /.or_border -->
+                                </div>
+                                <!-- /.col-12 -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.social_in -->
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control" placeholder="Имя" required>
+                            <div class="input-group-prepend">
+                                <div class="input-group-text ">*</div>
+                            </div>
+                        </div>
+                        <div class="input-group mb-2">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                            <div class="input-group-prepend">
+                                <div class="input-group-text ">*</div>
+                            </div>
+                        </div>
+                        <div class="input-group mb-2">
+                            <input type="email" class="form-control" placeholder="Телефон">
+
+                        </div>
+                        <div class="input-group mb-2">
+                            <input type="password" id="pass" class="form-control" placeholder="Пароль" required>
+                            <div class="input-group-prepend">
+                                <div class="input-group-text ">*</div>
+                            </div>
+                            <button type="button" class="ml-2 toggle_input_type"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <div class="input-group mb-2">
+                            <input type="password" id="repeat_pass" class="form-control" placeholder="Повторите пароль"
+                                   required>
+                            <div class="input-group-prepend">
+                                <div class="input-group-text ">*</div>
+                            </div>
+                            <button type="button" class="ml-2 toggle_input_type"><i class="fas fa-eye"></i></button>
+                        </div>
+                        <div class="input-group mb-2 d-none" id="pass_err">
+                            <p style="color: #F79393">Пароли не совпадают</p>
+                        </div>
+                        <div class="input-group mb-2 reCapcha_wrap"></div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="submit"
+                                        class="btn btn-block d-flex justify-content-between align-items-center struchaeva_btn">
+                                    Создать аккаунт <span class="arrow-right"></span>
+                                    <!-- /.arrow-right -->
+                                </button>
+                            </div>
+                            <!-- /.col-12 -->
+                            <div class="col-12">
+                                <p class="bottom_text d-flex justify-content-between">
+                                    Уже зарегистрированы
+                                    <a href="#signInModal" data-target="modal"
+                                       onclick="$('.close').click(); $('#signInModal').modal('show')">Войти</a>
+                                </p>
+                            </div>
+                            <!-- /.col-12 -->
+                        </div>
+                        <!-- /.row -->
+
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.modals -->
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<!--SlickSlider-->
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="script/video_modal.js"></script>
+
+
+<script>
+
+    $(document).ready(function ($) {
+
+        const default_slider_settings = {
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            autoplay: true,
+            nextArrow: '<button class="slick-arrow-right"><i class="fas fa-chevron-right"></i></button>',
+            prevArrow: '<button class="slick-arrow-left"><i class="fas fa-chevron-left"></i></button>',
+            responsive: [
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        autoplay: true,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 769,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        autoplay: true
+
+                    }
+                },
+                {
+                    breakpoint: 476,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+
+                    }
+                },
+                {
+                    breakpoint: 375,
+                    settings: {
+                        arrow: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+
+                    }
+                }
+
+            ]
+        };
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const check_passwords = function () {
+            if (pass.value != repeat_pass.value && pass.value && repeat_pass.value) {
+                pass_err.classList.remove('d-none');
+                pass.closest('form').querySelector('button[type="submit"]').setAttribute('disabled', 'disabled');
+            } else {
+                pass_err.classList.add('d-none');
+                pass.closest('form').querySelector('button[type="submit"]').removeAttribute('disabled');
+            }
+        };
+
+        $('#pass, #repeat_pass').on('change', e => {
+            check_passwords();
+        });
+
+        $('#trainings_slider_1, #materials_slider_1, .simple_slider').slick(default_slider_settings);
+
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            let id = e.target.getAttribute('data-sliderSelector');
+
+            if (!$(id).hasClass('slick-slider')) {
+                $(id).slick(default_slider_settings);
+            }
+
+
+        });
+
+        $('a.video_link').on('click', e => {
+            e.preventDefault();
+            let link = e.target.closest('a.video_link');
+            videoModal(link);
+        })
+
+        $('button.toggle_input_type').on('click', e => {
+            let parent = e.target.closest('.input-group');
+            let eaye = e.currentTarget.querySelector('.fa-eye');
+            let input = parent.querySelector('input');
+            input.getAttribute('type') === 'password' ? input.setAttribute('type', 'text') : input.setAttribute('type', 'password');
+            eaye.classList.toggle('fa-eye-slash');
+        })
+    });
+
+</script>
+
+
+</body>
+</html>
