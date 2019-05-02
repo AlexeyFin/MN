@@ -179,7 +179,10 @@
     .banner_wrap_content
       padding: 2.5rem
       &_info
-
+  section#articles
+    .article_item_wrap
+      .article_item
+        height: 364px
 
 @media screen and (max-width: 475px)
   section#banner
@@ -202,7 +205,7 @@
           a
             font-size: 1.15rem
   .sub_section_wrap
-    padding: 4rem 1.5rem
+    padding: 3rem 1.5rem 2rem 1.5rem
   section#faq_section
     .faq_accordion_item
       .card-body
@@ -228,7 +231,14 @@
   section#description
     .description_text
       font-size: 1rem
-
+  section#articles
+    .article_tab
+      overflow-y: auto
+      height: calc(364px + 364px + 2rem)
+  section#sub_banner
+    .banner_wrap_content
+      .sub_banner_photo
+        width: auto
 @media screen and (max-width: 414px)
   form.contact_form
     height: 440px

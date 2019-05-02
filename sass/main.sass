@@ -614,7 +614,7 @@ form.contact_form
 section#top_nav_menu
   background-color: $background_grey
   padding: 2.25rem 0
-  border-bottom: 1px solid black
+
   .top_nav_menu_wrap
     display: flex
     align-items: center
@@ -653,13 +653,14 @@ section#sub_banner
       padding: 7.5rem 5rem 2rem 5rem
       display: flex
       justify-content: center
+      .sub_banner_photo
+        width: 100%
       &_header
         font-family: Gilroy
         font-size: 2.75rem
         line-height: 56px
         color: white
         font-weight: 700
-
       &_text
         color: rgba(255,255,255,.5)
         font-family: 'Roboto Slab', serif
@@ -865,6 +866,38 @@ section#faq_section
       font-weight: 700
       font-size: 1.25rem
       color: #6D6D6D
+
+
+// Biography
+section#articles
+  .article_item_wrap
+    margin-bottom: 1.25rem
+    .article_item
+      height: 428px
+      border-radius: .5rem
+      transition: all .3s ease-in-out
+      a
+        height: 100%
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        color: white
+        font-weight: 700
+        transition: all .3s ease-in-out
+        .article_link
+          margin-top: auto
+          background: rgba(4, 4, 19, 0.75)
+          padding: 3rem 3rem 1rem 1.25rem
+          color: white
+          font-family: 'Roboto Slab', serif
+          border-radius: .5rem
+          line-height: 39px
+          transition: all .3s ease-in-out
+      &:hover
+        background-size: 110% !important
+        box-shadow: 0 0 11px rgba(33,33,33,.2)
+
 
 
 

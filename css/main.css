@@ -827,7 +827,6 @@ form.contact_form .contact_form_input_wrap .input-group-prepend, form.contact_fo
 section#top_nav_menu {
   background-color: #efeff0;
   padding: 2.25rem 0;
-  border-bottom: 1px solid black;
 }
 section#top_nav_menu .top_nav_menu_wrap {
   display: -webkit-box;
@@ -884,6 +883,9 @@ section#sub_banner .banner_wrap_content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+section#sub_banner .banner_wrap_content .sub_banner_photo {
+  width: 100%;
 }
 section#sub_banner .banner_wrap_content_header {
   font-family: Gilroy;
@@ -1153,4 +1155,48 @@ section#faq_section .faq_accordion_item .card-body {
   font-weight: 700;
   font-size: 1.25rem;
   color: #6D6D6D;
+}
+
+section#articles .article_item_wrap {
+  margin-bottom: 1.25rem;
+}
+section#articles .article_item_wrap .article_item {
+  height: 428px;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+section#articles .article_item_wrap .article_item a {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: white;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+section#articles .article_item_wrap .article_item a .article_link {
+  margin-top: auto;
+  background: rgba(4, 4, 19, 0.75);
+  padding: 3rem 3rem 1rem 1.25rem;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  border-radius: 0.5rem;
+  line-height: 39px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+section#articles .article_item_wrap .article_item:hover {
+  background-size: 110% !important;
+  -webkit-box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+          box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
